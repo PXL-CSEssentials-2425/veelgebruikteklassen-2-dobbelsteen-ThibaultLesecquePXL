@@ -16,9 +16,39 @@ namespace dobbelsteen
     /// </summary>
     public partial class MainWindow : Window
     {
+        Random rnd = new Random();
+
+        int diceResult;
+        int currentThrow;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void startButton_Click(object sender, RoutedEventArgs e)
+        {
+            while (diceResult != 6)
+            {
+                diceResult = rnd.Next(1, 7);
+                currentThrow += 1;
+
+                resultTextBox.Text = (resultTextBox.Text + $"Worp {currentThrow} geeft {diceResult}\n");
+            }
+        }
+
+        private void againButton_Click(object sender, RoutedEventArgs e)
+        {
+            diceResult = 0;
+            currentThrow = 0;
+
+            resultTextBox.Clear();
+            startButton.Focus();
+        }
+
+        private void exitButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

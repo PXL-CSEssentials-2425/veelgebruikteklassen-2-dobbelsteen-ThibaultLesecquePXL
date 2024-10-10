@@ -8,8 +8,8 @@
         Title="Dobbelsteen werpen tot 6" Height="450" Width="800" Background="IndianRed">
     <Grid>
         <TextBox Name="resultTextBox" HorizontalAlignment="Left" Margin="186,144,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="214" Height="150"/>
-        <Button Name="startButton" Content="Start" HorizontalAlignment="Left" Margin="426,224,0,0" VerticalAlignment="Top" Width="60" Foreground="IndianRed" FontWeight="Bold"/>
-        <Button Name="againButton" Content="Opnieuw" HorizontalAlignment="Left" Margin="426,249,0,0" VerticalAlignment="Top" Width="60" Foreground="IndianRed" FontWeight="Bold"/>
-        <Button Name="exitButton" Content="Sluiten" HorizontalAlignment="Left" Margin="426,274,0,0" VerticalAlignment="Top" Width="60" Foreground="IndianRed" FontWeight="Bold"/>
+        <Button Name="startButton" Content="Start" HorizontalAlignment="Left" Margin="426,224,0,0" VerticalAlignment="Top" Width="60" Foreground="IndianRed" FontWeight="Bold" Click="startButton_Click"/>
+        <Button Name="againButton" Content="Opnieuw" HorizontalAlignment="Left" Margin="426,249,0,0" VerticalAlignment="Top" Width="60" Foreground="IndianRed" FontWeight="Bold" Click="againButton_Click"/>
+        <Button Name="exitButton" Content="Sluiten" HorizontalAlignment="Left" Margin="426,274,0,0" VerticalAlignment="Top" Width="60" Foreground="IndianRed" FontWeight="Bold" Click="exitButton_Click"/>
     </Grid>
 </Window>
